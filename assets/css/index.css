@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --color-primary: #0b72cc;
+    --color-segundary: #7C5E99;
+     --transition-speed: 0.3s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background: linear-gradient(to left, #5D6D7E,#7F8C8D,#BDC3C7);
+}
+
+.nav img{
+    margin: 0px 12px;
+    max-width: 50px;
+    border-radius: 18px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px 15px;
+    border: solid 1px ;
+    padding: 3px;
+     background-color: var(--color-segundary); 
+    border-radius: 8px;
+     box-shadow: 5px 5px 10px rgba(194, 192, 192, 0.699);
+
+     & a{
+        color: rgb(255, 255, 255);
+        text-shadow: 5px 10px 8px rgb(0, 0, 0);
+     }
+
+} 
+.nav-home ul, li{
+    display: flex;
+    margin: 0px 15px;
+    gap: 15px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav-home ul li a::before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #0000009d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+.nav-home ul li:hover a::before{
+    width: 100%;
+    transform: translateY(100%);
+}
+.nav-home i{
+    font-size: 17px;
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+.home img{
+    width: 250px;
+    border-radius: 18% 25% 15% 10%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin: 30px 3rem;
+    position: relative;
+    left: 3rem;
+}
+.icons{
+    margin-top: 12px;
+    font-size: 2rem;
+    gap: 30px;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    margin-top: 8rem;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.cards{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    animation: slide-in-left 5s ease-out; 
+  & p{
+    font-size: 13px;
+    font-family: "Press Start 2P", system-ui;
+    margin-bottom: 10px;
+  }
+  & a{
+    color: black;
+  }
+}
+.card{
+    align-items: center;
+    background-color: #ffffff75;
+    border: none;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 18px;
+    box-shadow: 15px 15px 8px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.cards .card img{
+    border-radius: 15px;
+    width: 385px;
+    height: 200px;
+    cursor: pointer;
+
+}
+
+
